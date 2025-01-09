@@ -19,8 +19,7 @@
         define(function (req)
         {
             // Load moment.js as an optional dependency
-            var id = 'moment';
-            try { moment = req(id); } catch (e) {}
+            try { moment = req('moment'); } catch (e) {}
             return factory(moment);
         });
     } else {
